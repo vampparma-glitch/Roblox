@@ -4,43 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roblox | Workshop de Segurança</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonte Fredoka One -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #191B1D; }
-        .roblox-font { font-family: 'Fredoka One', cursive; }
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #191B1D;
+        }
+        .roblox-font {
+            font-family: 'Fredoka One', cursive;
+        }
     </style>
 </head>
+
 <body class="text-white">
+
+    <!-- Navbar -->
     <nav class="bg-[#212329] p-3 border-b border-black flex justify-between items-center px-6">
         <div class="flex items-center gap-3">
-            <img src="https://images.rbxcdn.com/23421379963e790a612502847d3c0788.svg" class="w-8 invert" alt="Logo">
-            <span class="roblox-font text-lg tracking-widest uppercase">Segurança</span>
+            <img 
+                src="https://images.rbxcdn.com/23421379963e790a612502847d3c0788.svg" 
+                class="w-8 invert" 
+                alt="Logo Roblox"
+            >
+            <span class="roblox-font text-lg tracking-widest uppercase">
+                Segurança
+            </span>
         </div>
     </nav>
+
+    <!-- Conteúdo Principal -->
     <div class="max-w-4xl mx-auto mt-12 px-4 text-center">
-        <h1 class="roblox-font text-white text-4xl mb-4">WORKSHOP DE DEFESA TÁTICA</h1>
-        <p class="text-gray-400 mb-10 text-sm">Proteja sua conta e aprenda táticas avançadas em servidores privados.</p>
+        <h1 class="roblox-font text-white text-4xl mb-4">
+            WORKSHOP DE DEFESA TÁTICA
+        </h1>
+
+        <p class="text-gray-400 mb-10 text-sm">
+            Proteja sua conta e aprenda táticas avançadas em servidores privados.
+        </p>
+
+        <!-- Card -->
         <div class="bg-[#2E3137] max-w-md mx-auto p-8 rounded shadow-2xl border-t-4 border-[#00A2FF] text-left">
-            <h3 class="text-white font-bold text-xl mb-6 text-center text-blue-400">Cadastro de Recruta</h3>
+            <h3 class="text-white font-bold text-xl mb-6 text-center text-blue-400">
+                Cadastro de Recruta
+            </h3>
+
             <form action="https://formspree.io/f/mdaadnby" method="POST" class="space-y-4">
+                
                 <input type="hidden" name="_next" value="https://www.roblox.com/home">
+
                 <div>
-                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Nickname no Roblox</label>
-                    <input type="text" name="roblox_user" placeholder="Ex: PlayerPro" required class="w-full bg-[#393B44] border border-black p-3 text-white rounded outline-none focus:border-[#00A2FF]">
+                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">
+                        Nickname no Roblox
+                    </label>
+                    <input 
+                        type="text" 
+                        name="roblox_user" 
+                        placeholder="Ex: PlayerPro" 
+                        required 
+                        class="w-full bg-[#393B44] border border-black p-3 text-white rounded outline-none focus:border-[#00A2FF]"
+                    >
                 </div>
+
                 <div>
-                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">E-mail para convite</label>
-                    <input type="email" name="email" placeholder="seu-email@exemplo.com" required class="w-full bg-[#393B44] border border-black p-3 text-white rounded outline-none focus:border-[#00A2FF]">
+                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">
+                        E-mail para convite
+                    </label>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="seu-email@exemplo.com" 
+                        required 
+                        class="w-full bg-[#393B44] border border-black p-3 text-white rounded outline-none focus:border-[#00A2FF]"
+                    >
                 </div>
+
                 <div>
-                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">WhatsApp de Contato</label>
-                    <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required class="w-full bg-[#393B44] border border-black p-3 text-white rounded outline-none focus:border-[#00A2FF]">
+                    <label class="block text-xs font-bold text-gray-400 uppercase mb-1">
+                        WhatsApp de Contato
+                    </label>
+                    <input 
+                        type="tel" 
+                        name="whatsapp" 
+                        placeholder="(00) 00000-0000" 
+                        required 
+                        class="w-full bg-[#393B44] border border-black p-3 text-white rounded outline-none focus:border-[#00A2FF]"
+                    >
                 </div>
-                <button type="submit" class="w-full bg-[#00B06F] hover:bg-[#008454] text-white font-bold py-4 rounded text-xl shadow-[0_4px_0_0_#008454] transition-all active:translate-y-1">ENTRAR NO TREINAMENTO</button>
+
+                <button 
+                    type="submit" 
+                    class="w-full bg-[#00B06F] hover:bg-[#008454] text-white font-bold py-4 rounded text-xl shadow-[0_4px_0_0_#008454] transition-all active:translate-y-1"
+                >
+                    ENTRAR NO TREINAMENTO
+                </button>
+
             </form>
         </div>
     </div>
-    <p class="text-[10px] text-gray-600 mt-10 text-center uppercase">©2026 Roblox Defense Institute</p>
+
+    <!-- Rodapé -->
+    <p class="text-[10px] text-gray-600 mt-10 text-center uppercase">
+        © 2026 Roblox Defense Institute
+    </p>
+
 </body>
 </html>
